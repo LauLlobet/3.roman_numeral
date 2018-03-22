@@ -21,7 +21,11 @@ public class RomanNumeralsShould {
             "11, XI",
             "20, XX",
             "50, L",
-            "73, LXXIII"
+            "73, LXXIII",
+            "1000, M",
+            "40, XL",
+            "90, XC",
+            "900, CM"
     })
     public void convert_arabic_to_roman(int arabic, String roman){
         RomanNumeralsConverter converter = new RomanNumeralsConverter();
