@@ -5,17 +5,16 @@ public class RomanNumeralsConverter {
         if(arabic == 4){
             return "IV";
         }
-        if(arabic >= 5){
-            roman = "V";
-            return addOnes(5,arabic,roman);
+        if(arabic == 10){
+            return "X";
         }
-        return addOnes(0,arabic,roman);
-    }
-
-    private String addOnes(int i, int arabic, String roman) {
-        for(;i<arabic;i++){
+        if(arabic >= 5){
+            roman =  "V";
+            arabic = arabic - 5;
+        }
+        for(int i=0;i<arabic;i++){
             roman+= "I";
         }
-        return roman;
+        return roman ;
     }
 }

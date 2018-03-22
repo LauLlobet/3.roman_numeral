@@ -16,11 +16,12 @@ public class RomanNumeralsShould {
             "4, IV",
             "5, V",
             "6, VI",
-            "7, VII"
+            "7, VII",
+            "10, X"
     })
     public void convert_arabic_to_roman(int arabic, String roman){
         RomanNumeralsConverter converter = new RomanNumeralsConverter();
 
-        assertEquals(converter.convert(arabic), roman);
+        assertEquals(roman, converter.convert(arabic));
     }
 }
