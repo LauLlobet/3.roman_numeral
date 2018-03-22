@@ -5,8 +5,10 @@ import static java.util.Map.entry;
 
 public class RomanNumeralsConverter {
 
-    public String convert(int arabic) {
-        Map<Integer,String> literals = new LinkedHashMap();
+    private final Map<Integer, String> literals;
+
+    public RomanNumeralsConverter() {
+        literals = new LinkedHashMap();
         literals.put(1000,"M");
         literals.put(900,"CM");
         literals.put(100,"C");
@@ -17,19 +19,20 @@ public class RomanNumeralsConverter {
         literals.put(5, "V");
         literals.put(4,"IV");
         literals.put(1,"I");
-        String roman = "";
+    }
 
-
+    public String convert(int arabic) {
+        StringBuilder roman = new StringBuilder();
 
         for (Map.Entry<Integer, String> literalArabicToRoman : literals.entrySet())
         {
-            int literalNumberKey = literalArabicToRoman.getKey();
-            while (arabic >= literalNumberKey){
-                roman = roman + literalArabicToRoman.getValue();
-                arabic = arabic - literalNumberKey;
+            int literalArabicKey = literalArabicToRoman.getKey();
+            while (arabic >= literalArabicKey){
+                roman.append(literalArabicToRoman.getValue());
+                arabic = arabic - literalArabicKey;
             }
         }
 
-        return roman;
+        return roman.toString();
     }
 }

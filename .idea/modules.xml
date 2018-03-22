@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lau.llobet.kata.iml" filepath="$PROJECT_DIR$/.idea/modules/lau.llobet.kata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lau.llobet.kata_main.iml" filepath="$PROJECT_DIR$/.idea/modules/lau.llobet.kata_main.iml" group="lau.llobet.kata" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lau.llobet.kata_test.iml" filepath="$PROJECT_DIR$/.idea/modules/lau.llobet.kata_test.iml" group="lau.llobet.kata" />
+    </modules>
+  </component>
+</project>
